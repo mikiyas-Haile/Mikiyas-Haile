@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+@font-face {
+    font-family:"Abys";
+    src: url("./fonts/AbyssinicaSIL-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Addis";
+    src: url("./fonts/Addis.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Kiros";
+    src: url("./fonts/Kiros.ttf") format("truetype");
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    background-color: #44ffa8;
+    /* background-color: #060b0f; */
+    /* background-color: #01172b; */
+    /* background-color: #081017; */
+    /* background-color: #1c3347; */
+    /* background-color: #011221; */
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Poppins;
+}
+a {
+    text-decoration: none;
+}
+h5  {
+    font-weight: 400;
+}
+li {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 15px;
+}
+h6 {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+}
+#skills {
+    scroll-snap-align: center;
+}
+.container {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.fade-in {
+    transition: opacity 250ms ease-in;
+}
+.box {
+    min-height: 80vh;
+    background-color: lightblue;
+    max-width: 50vw;
+    box-shadow: 10px 10px hsl(0, 100%, 69%), 0 0 0px 10px #15ff00;
+    /* display: flex; */
+}
+.left {
+    padding: 30px;
+    background-color: rgb(88, 153, 62);
+}
+.right {
+    padding: 30px;
+    background-color: #3a7fb8;
+}
+@media all and (max-width: 1000px){
+    body {
+        background-color: #081017;
+    }
+    .box {
+        background-color: lightblue;
+        min-width: 80vw;
+        display: table-column;
+    }
+    .left, .right {
+        width: auto;
+    }
+}
