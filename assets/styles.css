@@ -76,8 +76,11 @@ h6 {
     min-height: 80vh;
     background-color: lightblue;
     max-width: 50vw;
-    box-shadow: 10px 10px #F3CF3E, 0 0 0px 10px #8FEBD5;
+    box-shadow: 10px 10px #00dda9, 0 0 0px 10px #64968a;
     /* display: flex; */
+    position: absolute;
+    top: 0;
+    margin-top: 30px ;
 }
 .left {
     padding: 30px;
